@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}Blog | {% endblock %}
+
+{% block css %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/customized/blog.css') }}">
+
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+
+	<div class="center-block">
+
+		<div class="col-md-2"></div>
+
+		<div class="col-md-8 col-sm-12">
+
+			<div class="panel panel-default">
+
+				<ul class="list-group">
+
+					{% for page in pages %}
+					<li class="list-group-item title">
+						<a href="{{ url_for('page', path=page.path) }}">{{ page.meta.title }}</a>
+					</li>
+					{% endfor %}
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+{% endblock %}

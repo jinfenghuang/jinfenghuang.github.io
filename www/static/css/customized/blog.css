@@ -1,0 +1,26 @@
+.row {
+	padding-top: 30px;
+	margin: 5% 5% 0% 5%;
+	min-height: 100%;
+}
+
+.title a {
+    display: block;
+}
+
+.title {
+    cursor: pointer;
+}
+
+li.title:hover {
+    background-color: #eee;
+}
+
+.panel {
+    border-radius: 0;
+}
+
+.panel-default > .panel-heading {
+	background-image: none;
+	background-color: #fff;
+}

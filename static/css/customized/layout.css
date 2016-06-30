@@ -1,0 +1,58 @@
+body {
+	padding-top: 50px;
+}
+
+.navbar-custom {
+	background: white;
+}
+
+.navbar-fixed-top {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.navbar-brand {
+	padding-left: 110px;
+	font-family: 'Tangerine', serif;
+	font-size: 40px;
+	color: #000;
+}
+
+.navbar ul {
+	padding-right: 80px;
+}
+
+.navbar ul li a {
+	color: #000;
+	font-family: 'Lato', thin, sans-serif;
+}
+
+.navbar ul li a:hover{
+   border-bottom: 2px solid;
+   background-color: transparent;
+}
+
+.container {
+	vertical-align: middle;
+}
+
+.content {
+	padding-top: 40px;
+}
+
+.content li {
+	list-style: none;
+}
+
+.footer {
+  	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+  	height: 60px;
+  	font-family: 'Lato', thin, sans-serif;
+}
+
+.container .text-muted {
+  	margin: 20px 0;
+  	text-align: center;
+}

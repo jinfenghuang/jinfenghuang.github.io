@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}Home | {% endblock %}
+
+{% block css %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/customized/home.css')}}">
+
+{% endblock %}
+
+{% block content %}
+
+<div id="canvas">
+
+	<div>
+		<img src="{{ url_for('static', filename='img/canvas.jpg') }}" style="">
+	</div>
+
+</div>
+
+{% endblock %}
