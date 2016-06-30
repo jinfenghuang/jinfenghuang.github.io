@@ -2,10 +2,21 @@
 
 {% block title %}{{ page.meta.title }} | {% endblock %}
 
+{% block css %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/customized/page.css') }}">
+
+{% endblock %}
+
 {% block content %}
-<h3>{{ page.meta.title }}</h3>
-<p class="lead small">{{ page.meta.date }}</p>
-<div>
+
+<div class="article">
+
+<h2>{{ page.meta.title }}</h2>
+<p>{{ page.meta.date }}</p>
+
 {{ page }}
+
 </div>
+
 {% endblock %}

@@ -7,13 +7,25 @@ from flask import render_template
 from app import app
 from app import pages
 
+# ------------------------------------------------
+# Home
+# ------------------------------------------------
+
 @app.route('/')
 def index():
 	return render_template('index.html')
 
+# ------------------------------------------------
+# About
+# ------------------------------------------------
+
 @app.route('/about')
 def about():
 	return render_template('about.html')
+
+# ------------------------------------------------
+# Blog
+# ------------------------------------------------
 
 @app.route('/blog')
 def blog():

@@ -14,7 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
 
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/customized/layout.css') }}">
 	{% block css %}
 	{% endblock %}
@@ -22,7 +23,7 @@
 
 <body>
 
-	<nav class="navbar navbar-fixed-top">
+	<nav class="navbar navbar-custom navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -36,8 +37,9 @@
 			<div class="navbar-collapse navbar-right collapse">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="{{ url_for('index') }}">HOME</a></li>
-					<li><a href="{{ url_for('blog') }}">BLOG</a></li>
 					<li><a href="{{ url_for('about') }}">ABOUT</a></li>
+					<li><a href="{{ url_for('blog') }}">BLOG</a></li>
+					<li><a href="https://medium.com/@jinfenghuang">MEDIUM</a></li>
 				</ul>
 			</div>
 		</div>
